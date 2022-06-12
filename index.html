@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <title>LeatherHeads</title>
+    
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img class="logo-image" src="images/logo.png" alt="logo">
+            <h1 class="logo-text">Leather Heads</h1>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="#collection">Collection</a>
+            </li>
+            <li>
+                <a href="#roadmap">Roadmap</a>
+            </li>
+            <li>
+                <a href="#faqs">FAQs</a>
+            </li>
+            <li>
+                <a href="#aboutus">About us</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="header" id="header"></div>
+    <div class="collection" id="collection">
+        <h1 class="sections-h1">Collection</h1>
+        <div class="container">
+            <div class="image-container">
+                <img src="images/collection-img-withg.png" alt="collection-img-withg" class="collection-img">
+            </div>
+            <div class="text-container">
+                <div class="collection-text">
+                    <h1>Here are some examples of our collection</h1>
+                    <h3>We have developed an incredible and unique NFT collection, made with love, ambition, and a huge future ahead.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="roadmap" id="roadmap">
+        <h1 class="sections-h1">Roadmap</h1>
+        <img class="roadmap-img" src="images/imgtemplate.jpg" alt="imgtemplate">
+    </div>
+    <div class="faqs" id="faqs">
+        <h1 class="sections-h1">FAQs</h1>
+        <div class="faqs-container">
+            <div class="left-container-faqs">
+                <h1 class="faqs-h1">Frequently <br> Asked <br> Questions</h1>
+                <img class="faqs-img" src="images/faqsimg.png" alt="faqsimg">
+            </div>
+            <div class="right-container-faqs">
+                <h2>When? How much? How many?</h2>
+                <h4 class="faqs-h4">TBD</h4>
+
+                <h2 class="faqs-h2">Is this project affiliated with Sneakerheads on the eth chain?</h2>
+                <h4 class="faqs-h4">No we are not affiliated with them at all. This is inspired by it of course. But we are going to stick to animals for now. We are committed to bringing some of the highest quality 3D art and also give you many great reasons to want to hold your Leatherheads.</h4>
+
+                <h2 class="faqs-h2">What Blockchain will this be minted on?</h2>
+                <h4 class="faqs-h4">We will be launching on the Cardano blockchain.</h4>
+
+                <h2 class="faqs-h2">Which wallet can we mint form?</h2>
+                <h4 class="faqs-h4">You can mint from any Cardano supported wallets such as Nami, Eternl, and Daedalus. Please ensure you are not minting from an exchange wallet!</h4>
+
+                <h2 class="faqs-h2">Do we own the licensing for our NFTs?</h2>
+                <h4 class="faqs-h4">By being a holder of a Leatherhead NFT, you will have full commercial rights to that NFT.</h4>
+
+                <h2 class="faqs-h2">Will there be any whitelist?</h2>
+                <h4 class="faqs-h4">Yes! We would like to keep this as organic as possible. There will be no grinding in chat and the amount you type will not guarantee you a whitelist spot. What will help is by joining the Discord and interacting with the community. Twitter engagements will also help you get noticed.</h4>
+            </div>
+        </div>
+    </div>
+    <div class="aboutus" id="aboutus">
+        <h1 class="sections-h1">About us</h1>
+        <div class="aboutus-container">
+            <div class="left-container-aboutus">
+                <div class="flex-item-left">
+                    <img src="images/greenorange.png" alt="greenorange" class="team-img">
+                    <h2 class="team-text">TomRem</h2>
+                    <h3 class="team-role">Owner</h3>
+                </div>
+                <div class="flex-item-right">
+                    <img src="images/greenyellow.png" alt="greenyellow" class="team-img">
+                    <h2 class="team-text">BigJ</h2>
+                    <h3 class="team-role">Mod</h3>
+                </div>
+                <div class="flex-item-left">
+                    <img src="images/red.png" alt="red" class="team-img">
+                    <h2 class="team-text">ChineseGandalf</h2>
+                    <h3 class="team-role">Mod</h3>
+                </div>
+                <div class="flex-item-right">
+                    <img src="images/redblueblack.png" alt="redblueblack" class="team-img">
+                    <h2 class="team-text">Terr0nz</h2>
+                    <h3 class="team-role">Web Developer</h3>
+                </div>
+            </div>
+            <div class="right-container-aboutus">
+                <h1 class="aboutus-h1">Leather <br> Heads <br> Team</h1>
+                <img class="aboutus-img" src="images/aboutusimg.png" alt="faqsimg">
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){      
+        var scroll_pos = 0;
+        var $win = $(window);
+        var winH = $win.height(); 
+        $(document).scroll(function() { 
+            var $nav = $(".navbar");
+            if($(window).scrollTop() > $(window).height() + 100 - $nav.height()) {
+                $('.logo-text').css('color', '#484641');
+                $('.nav-links a').css('color', '#484641');
+                $(".nav-links a").mouseover(function() {
+                    $(this).css({'color': '#748675', 'transition': 'color .25s'});
+                }).mouseout(function() {
+                    $(this).css({'color': '#484641', 'transition': 'color .25s'});
+                });
+            } else {
+                $('.logo-text').css('color', '#fff');
+                $('.nav-links a').css('color', '#fff');
+                $(".nav-links a").mouseover(function() {
+                    $(this).css({'color': '#748675', 'transition': 'color .25s'});
+                }).mouseout(function() {
+                    $(this).css({'color': '#fff', 'transition': 'color .25s'});
+                });
+            }
+        });
+    });
+    </script>
+</body>
+</html>
