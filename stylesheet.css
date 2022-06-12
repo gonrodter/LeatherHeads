@@ -76,6 +76,7 @@ nav {
 .container{
   display: flex;
   height: 100vh;
+  margin-top: -5%;
 }
 
 .image-container{
@@ -155,14 +156,17 @@ nav {
   width: fit-content;
   display: block;
   margin: 0 auto;
+  letter-spacing: 2px;
 }
 
 .faqs-h2{
   margin-top: 25px;
+  letter-spacing: 2px;
 }
 
 .faqs-h4{
   font-weight: lighter;
+  letter-spacing: 1px;
 }
 
 .faqs-img{
@@ -220,11 +224,13 @@ nav {
 .team-text{
   padding-top: 5%;
   text-align: center;
+  letter-spacing: 1px;
 }
 
 .team-role{
   text-align: center;
   color: #4846419f;
+  letter-spacing: 1px;
 }
 
 .aboutus-h1{
