@@ -143,6 +143,7 @@ nav {
 
 .faqs-container{
   display: flex;
+  margin-top: 5%;
 }
 
 .left-container-faqs{

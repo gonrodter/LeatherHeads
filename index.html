@@ -125,7 +125,9 @@
         $(document).scroll(function() { 
             var $nav = $(".navbar");
             if($(window).scrollTop() > $(window).height() + 100 - $nav.height()) {
+                $('.logo').css({'transform-origin': 'left', 'transform': 'translate(0, 250%) rotateZ(-90deg)', 'transition': 'transform 0.5s'});
                 $('.logo-text').css('color', '#484641');
+                $('.nav-links').css({'transform': 'translate(50%, 1000%) rotateZ(90deg)', 'transition': 'transform 0.5s'});
                 $('.nav-links a').css('color', '#484641');
                 $(".nav-links a").mouseover(function() {
                     $(this).css({'color': '#748675', 'transition': 'color .25s'});
@@ -133,7 +135,9 @@
                     $(this).css({'color': '#484641', 'transition': 'color .25s'});
                 });
             } else {
+                $('.logo').css({'transform': 'rotateZ(0deg)', 'transition': 'transform 0.5s'});
                 $('.logo-text').css('color', '#fff');
+                $('.nav-links').css({'transform': 'rotateZ(0deg)', 'transition': 'transform 0.5s'});
                 $('.nav-links a').css('color', '#fff');
                 $(".nav-links a").mouseover(function() {
                     $(this).css({'color': '#748675', 'transition': 'color .25s'});
